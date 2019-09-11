@@ -35,17 +35,52 @@ namespace Entidades
         public string BinarioDecimal(string binario)
         {
             string ret = "";
+            double suma = 0;
+            char[] array = binario.ToCharArray();
+            Array.Reverse(array);
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] == '1')
+                {
+
+                    suma += (int)Math.Pow(2, i);
+                }
+            }
+            ret += suma;
+
             return ret;
         }
 
         public string DecimalBinario(double numero)
         {
             string ret = "";
+            double num=numero;
+            if(numero<0)
+            {
+                num = numero * -1;
+            }
+            while (num >= 1)
+            {
+
+                if (num % 2 == 0)
+                {
+                    ret = "0" + ret;
+                }
+                else
+                {
+                    ret = "1" + ret;
+                }
+                num = num / 2;
+
+            }
             return ret;
         }
         public string DecimalBinario(string strNumero)
         {
             string ret = "";
+            double numero;
+            double.TryParse(strNumero, out numero);
+            ret= DecimalBinario(numero);
             return ret;
         }
 
