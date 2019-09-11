@@ -84,6 +84,22 @@ namespace Entidades
             return ret;
         }
 
+        public static double operator +(Numero num1,Numero num2)
+        {
+            return num1 + num2;
+        }
+        public static double operator -(Numero num1, Numero num2)
+        {
+            return num1 - num2;
+        }
+        public static double operator *(Numero num1, Numero num2)
+        {
+            return num1 * num2;
+        }
+        public static double operator /(Numero num1, Numero num2)
+        {
+            return num1 / num2;
+        }
 
 
 
