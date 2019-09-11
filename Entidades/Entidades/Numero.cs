@@ -27,8 +27,8 @@ namespace Entidades
 
         private static double ValidarNumero(string strNumero)
         {
-            double ret = 0;
-
+            double ret;
+            double.TryParse(strNumero, out ret);
             return ret;
         }
 
@@ -100,6 +100,13 @@ namespace Entidades
         {
             return num1 / num2;
         }
+
+        
+        /*private string SetNumero
+        {
+            
+        }*/
+        
 
 
 
