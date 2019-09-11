@@ -20,7 +20,7 @@ namespace Entidades
         }
         public Numero(string strNumero)
         {
-            double.TryParse(strNumero, out this.numero);
+            
         }
 
 
@@ -86,19 +86,27 @@ namespace Entidades
 
         public static double operator +(Numero num1,Numero num2)
         {
-            return num1 + num2;
+            return num1.numero + num2.numero;
         }
         public static double operator -(Numero num1, Numero num2)
         {
-            return num1 - num2;
+            return num1.numero - num2.numero;
         }
         public static double operator *(Numero num1, Numero num2)
         {
-            return num1 * num2;
+            return num1.numero * num2.numero;
         }
         public static double operator /(Numero num1, Numero num2)
         {
-            return num1 / num2;
+            if(num2.numero==0)
+            {
+                return double.MinValue;
+            }
+            else
+            {
+                return num1.numero / num2.numero;
+            }
+            
         }
 
         
