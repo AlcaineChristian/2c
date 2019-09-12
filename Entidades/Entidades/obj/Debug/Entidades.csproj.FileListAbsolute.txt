@@ -1,0 +1,6 @@
+D:\Alcaine\Entidades\Entidades\bin\Debug\Entidades.dll
+D:\Alcaine\Entidades\Entidades\bin\Debug\Entidades.pdb
+D:\Alcaine\Entidades\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+D:\Alcaine\Entidades\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+D:\Alcaine\Entidades\Entidades\obj\Debug\Entidades.dll
+D:\Alcaine\Entidades\Entidades\obj\Debug\Entidades.pdb

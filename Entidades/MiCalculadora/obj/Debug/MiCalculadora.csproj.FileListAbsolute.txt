@@ -1,0 +1,13 @@
+D:\Alcaine\Entidades\MiCalculadora\bin\Debug\MiCalculadora.exe.config
+D:\Alcaine\Entidades\MiCalculadora\bin\Debug\MiCalculadora.exe
+D:\Alcaine\Entidades\MiCalculadora\bin\Debug\MiCalculadora.pdb
+D:\Alcaine\Entidades\MiCalculadora\bin\Debug\Entidades.dll
+D:\Alcaine\Entidades\MiCalculadora\bin\Debug\Entidades.pdb
+D:\Alcaine\Entidades\MiCalculadora\obj\Debug\MiCalculadora.csprojAssemblyReference.cache
+D:\Alcaine\Entidades\MiCalculadora\obj\Debug\MiCalculadora.Properties.Resources.resources
+D:\Alcaine\Entidades\MiCalculadora\obj\Debug\MiCalculadora.csproj.GenerateResource.cache
+D:\Alcaine\Entidades\MiCalculadora\obj\Debug\MiCalculadora.csproj.CoreCompileInputs.cache
+D:\Alcaine\Entidades\MiCalculadora\obj\Debug\MiCalculadora.csproj.CopyComplete
+D:\Alcaine\Entidades\MiCalculadora\obj\Debug\MiCalculadora.exe
+D:\Alcaine\Entidades\MiCalculadora\obj\Debug\MiCalculadora.pdb
+D:\Alcaine\Entidades\MiCalculadora\obj\Debug\MiCalculadora.FormCalculadora.resources

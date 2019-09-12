@@ -32,7 +32,7 @@ namespace Entidades
             return ret;
         }
 
-        public string BinarioDecimal(string binario)
+        public static string BinarioDecimal(string binario)
         {
             string ret = "";
             double suma = 0;
@@ -51,7 +51,7 @@ namespace Entidades
             return ret;
         }
 
-        public string DecimalBinario(double numero)
+        public static string DecimalBinario(double numero)
         {
             string ret = "";
             double num=numero;
