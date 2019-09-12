@@ -54,7 +54,7 @@ namespace Entidades
         public static string DecimalBinario(double numero)
         {
             string ret = "";
-            int num=(int)numero;
+            int num = (int)numero;
             while (num >= 1)
             {
 
@@ -76,11 +76,11 @@ namespace Entidades
             string ret = "";
             double numero;
             double.TryParse(strNumero, out numero);
-            ret= DecimalBinario(numero);
+            ret = DecimalBinario(numero);
             return ret;
         }
 
-        public static double operator +(Numero num1,Numero num2)
+        public static double operator +(Numero num1, Numero num2)
         {
             return num1.numero + num2.numero;
         }
@@ -94,7 +94,7 @@ namespace Entidades
         }
         public static double operator /(Numero num1, Numero num2)
         {
-            if(num2.numero==0)
+            if (num2.numero == 0)
             {
                 return double.MinValue;
             }
@@ -102,15 +102,12 @@ namespace Entidades
             {
                 return num1.numero / num2.numero;
             }
-            
+
         }
 
-        
-        /*private string SetNumero
-        {
-            
-        }*/
-        
+
+
+
 
 
 

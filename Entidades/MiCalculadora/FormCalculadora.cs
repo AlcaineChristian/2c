@@ -26,6 +26,7 @@ namespace MiCalculadora
         private void btnOperar_Click(object sender, EventArgs e)
         {
             lblResultado.Text = Convert.ToString(Operar(txtNumero1.Text, txtNumero2.Text, cmbOperador.Text));
+
         }
 
         private void lblResultado_Click(object sender, EventArgs e)
@@ -48,7 +49,7 @@ namespace MiCalculadora
 
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
-            
+
 
             lblResultado.Text = Numero.DecimalBinario(lblResultado.Text);
         }
@@ -64,7 +65,7 @@ namespace MiCalculadora
             double ret = 0;
             Numero n1 = new Numero(numero1);
             Numero n2 = new Numero(numero2);
-            Calculadora.Operar(n1, n2, operador);
+            ret = Calculadora.Operar(n1, n2, operador);
             return ret;
         }
     }

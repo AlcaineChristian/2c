@@ -8,11 +8,11 @@ namespace Entidades
 {
     public class Calculadora
     {
-        public static double Operar(Numero num1,Numero num2, string operador)
+        public static double Operar(Numero num1, Numero num2, string operador)
         {
             double ret = 0;
-            
-            switch(ValidarOperador(operador))
+
+            switch (ValidarOperador(operador))
             {
                 case "+":
                     ret = num1 + num2;
@@ -26,7 +26,7 @@ namespace Entidades
                 case "/":
                     ret = num1 / num2;
                     break;
-                
+
             }
 
 

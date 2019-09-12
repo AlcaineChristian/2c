@@ -121,20 +121,20 @@
             // 
             // lblResultado
             // 
-            this.lblResultado.AutoSize = true;
             this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultado.Location = new System.Drawing.Point(213, 9);
+            this.lblResultado.Location = new System.Drawing.Point(12, 9);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblResultado.Size = new System.Drawing.Size(0, 31);
+            this.lblResultado.Size = new System.Drawing.Size(312, 31);
             this.lblResultado.TabIndex = 8;
-            this.lblResultado.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lblResultado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblResultado.Click += new System.EventHandler(this.lblResultado_Click);
             // 
             // FormCalculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(338, 274);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.btnConvertirADecimal);
