@@ -20,7 +20,7 @@ namespace Entidades
         }
         public Numero(string strNumero)
         {
-            
+            this.numero = ValidarNumero(strNumero);
         }
 
 
@@ -54,11 +54,7 @@ namespace Entidades
         public static string DecimalBinario(double numero)
         {
             string ret = "";
-            double num=numero;
-            if(numero<0)
-            {
-                num = numero * -1;
-            }
+            int num=(int)numero;
             while (num >= 1)
             {
 
@@ -75,7 +71,7 @@ namespace Entidades
             }
             return ret;
         }
-        public string DecimalBinario(string strNumero)
+        public static string DecimalBinario(string strNumero)
         {
             string ret = "";
             double numero;

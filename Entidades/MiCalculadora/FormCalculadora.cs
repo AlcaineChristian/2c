@@ -20,12 +20,12 @@ namespace MiCalculadora
 
         private void FormCalculadora_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnOperar_Click(object sender, EventArgs e)
         {
-            lblResultado.Text = "5";
+            lblResultado.Text = Convert.ToString(Operar(txtNumero1.Text, txtNumero2.Text, cmbOperador.Text));
         }
 
         private void lblResultado_Click(object sender, EventArgs e)
@@ -48,10 +48,9 @@ namespace MiCalculadora
 
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
-            double resultado;
-            double.TryParse(lblResultado.Text, out resultado);
+            
 
-            lblResultado.Text=Numero.DecimalBinario(resultado);
+            lblResultado.Text = Numero.DecimalBinario(lblResultado.Text);
         }
 
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
@@ -59,6 +58,14 @@ namespace MiCalculadora
 
 
             lblResultado.Text = Numero.BinarioDecimal(lblResultado.Text);
+        }
+        private static double Operar(string numero1, string numero2, string operador)
+        {
+            double ret = 0;
+            Numero n1 = new Numero(numero1);
+            Numero n2 = new Numero(numero2);
+            Calculadora.Operar(n1, n2, operador);
+            return ret;
         }
     }
 }
