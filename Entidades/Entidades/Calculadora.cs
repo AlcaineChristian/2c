@@ -28,10 +28,9 @@ namespace Entidades
                     break;
 
             }
-
-
             return ret;
         }
+
         public static string ValidarOperador(string operador)
         {
             string ret = "";

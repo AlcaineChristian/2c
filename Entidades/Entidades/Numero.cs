@@ -14,16 +14,16 @@ namespace Entidades
         {
             this.numero = 0;
         }
+
         public Numero(double numero)
         {
             this.numero = numero;
         }
+
         public Numero(string strNumero)
         {
-            this.numero = ValidarNumero(strNumero);
+            SetNumero = strNumero;
         }
-
-
 
         private static double ValidarNumero(string strNumero)
         {
@@ -71,6 +71,7 @@ namespace Entidades
             }
             return ret;
         }
+
         public static string DecimalBinario(string strNumero)
         {
             string ret = "";
@@ -84,14 +85,17 @@ namespace Entidades
         {
             return num1.numero + num2.numero;
         }
+
         public static double operator -(Numero num1, Numero num2)
         {
             return num1.numero - num2.numero;
         }
+
         public static double operator *(Numero num1, Numero num2)
         {
             return num1.numero * num2.numero;
         }
+
         public static double operator /(Numero num1, Numero num2)
         {
             if (num2.numero == 0)
@@ -101,8 +105,16 @@ namespace Entidades
             else
             {
                 return num1.numero / num2.numero;
-            }
+            } 
 
+        }
+
+        private string SetNumero
+        {
+            set
+            {
+                this.numero = ValidarNumero(value);
+            }
         }
     }
 }
