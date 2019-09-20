@@ -1,0 +1,10 @@
+D:\Alcaine\Ejercicio34\Ejercicio34\bin\Debug\Ejercicio34.exe.config
+D:\Alcaine\Ejercicio34\Ejercicio34\bin\Debug\Ejercicio34.exe
+D:\Alcaine\Ejercicio34\Ejercicio34\bin\Debug\Ejercicio34.pdb
+D:\Alcaine\Ejercicio34\Ejercicio34\bin\Debug\VehiculoTerrestre.dll
+D:\Alcaine\Ejercicio34\Ejercicio34\bin\Debug\VehiculoTerrestre.pdb
+D:\Alcaine\Ejercicio34\Ejercicio34\obj\Debug\Ejercicio34.csprojAssemblyReference.cache
+D:\Alcaine\Ejercicio34\Ejercicio34\obj\Debug\Ejercicio34.csproj.CoreCompileInputs.cache
+D:\Alcaine\Ejercicio34\Ejercicio34\obj\Debug\Ejercicio34.csproj.CopyComplete
+D:\Alcaine\Ejercicio34\Ejercicio34\obj\Debug\Ejercicio34.exe
+D:\Alcaine\Ejercicio34\Ejercicio34\obj\Debug\Ejercicio34.pdb

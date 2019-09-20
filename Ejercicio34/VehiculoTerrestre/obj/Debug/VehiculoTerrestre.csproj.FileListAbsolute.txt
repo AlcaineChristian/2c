@@ -1,0 +1,6 @@
+D:\Alcaine\Ejercicio34\VehiculoTerrestre\bin\Debug\VehiculoTerrestre.dll
+D:\Alcaine\Ejercicio34\VehiculoTerrestre\bin\Debug\VehiculoTerrestre.pdb
+D:\Alcaine\Ejercicio34\VehiculoTerrestre\obj\Debug\VehiculoTerrestre.csprojAssemblyReference.cache
+D:\Alcaine\Ejercicio34\VehiculoTerrestre\obj\Debug\VehiculoTerrestre.csproj.CoreCompileInputs.cache
+D:\Alcaine\Ejercicio34\VehiculoTerrestre\obj\Debug\VehiculoTerrestre.dll
+D:\Alcaine\Ejercicio34\VehiculoTerrestre\obj\Debug\VehiculoTerrestre.pdb
