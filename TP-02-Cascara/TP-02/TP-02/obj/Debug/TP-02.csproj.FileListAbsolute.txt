@@ -18,3 +18,13 @@ D:\Federico\VB .Net\Visual C#\utn\TPs\2018\TP-02\TP-02\bin\Debug\TP-02.exe.confi
 D:\Federico\VB .Net\Visual C#\utn\TPs\2018\TP-02\TP-02\obj\Debug\TP-02.exe
 D:\Federico\VB .Net\Visual C#\utn\TPs\2018\TP-02\TP-02\obj\Debug\TP-02.pdb
 D:\Federico\VB .Net\Visual C#\utn\TPs\2018\TP-02\TP-02\obj\Debug\TP-02.csprojResolveAssemblyReference.cache
+D:\Alcaine\TP-02-Cascara\TP-02\TP-02\obj\Debug\TP-02.csprojAssemblyReference.cache
+D:\Alcaine\TP-02-Cascara\TP-02\TP-02\obj\Debug\TP-02.csproj.CoreCompileInputs.cache
+D:\Alcaine\TP-02-Cascara\TP-02\TP-02\obj\Debug\TP-02.exe
+D:\Alcaine\TP-02-Cascara\TP-02\TP-02\bin\Debug\TP-02.exe.config
+D:\Alcaine\TP-02-Cascara\TP-02\TP-02\bin\Debug\TP-02.exe
+D:\Alcaine\TP-02-Cascara\TP-02\TP-02\bin\Debug\TP-02.pdb
+D:\Alcaine\TP-02-Cascara\TP-02\TP-02\bin\Debug\Entidades.dll
+D:\Alcaine\TP-02-Cascara\TP-02\TP-02\bin\Debug\Entidades.pdb
+D:\Alcaine\TP-02-Cascara\TP-02\TP-02\obj\Debug\TP-02.csproj.CopyComplete
+D:\Alcaine\TP-02-Cascara\TP-02\TP-02\obj\Debug\TP-02.pdb

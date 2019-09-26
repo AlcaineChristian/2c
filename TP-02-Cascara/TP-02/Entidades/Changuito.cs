@@ -36,7 +36,7 @@ namespace Entidades_2018
         /// <returns></returns>
         public override string ToString()
         {
-            return this.Mostrar(this, ETipo.Todos);
+            return Mostrar(this, ETipo.Todos);
         }
         #endregion
 
@@ -87,7 +87,7 @@ namespace Entidades_2018
         /// <returns></returns>
         public static Changuito operator +(Changuito c, Producto p)
         {
-            foreach (Producto v in c)
+            foreach (Producto v in (IEnumerable<Changuito>)c)
             {
                 if (v == p)
                     return c;
@@ -104,7 +104,7 @@ namespace Entidades_2018
         /// <returns></returns>
         public static Changuito operator -(Changuito c, Producto p)
         {
-            foreach (Producto v in c)
+            foreach (Producto v in (IEnumerable<Changuito>)c)
             {
                 if (v == p)
                 {
