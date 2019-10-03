@@ -41,34 +41,35 @@ namespace TP_02_2018
             changoDeCompras += a4;
 
             Console.WriteLine(changoDeCompras.ToString());
-            Console.WriteLine("<-----------PRESIONE UNA TECLA PARA CONTINUAR----------->");
+            Console.WriteLine("<-----------PRESIONE UNA TECLA PARA CONTINUAR----------->(todo)");
             Console.ReadKey();
-            Console.Clear();
+            //Console.Clear();
 
             // Quito un item y muestro
             changoDeCompras -= c1;
 
             Console.WriteLine(changoDeCompras.ToString());
-            Console.WriteLine("<-----------PRESIONE UNA TECLA PARA CONTINUAR----------->");
+            Console.WriteLine("<-----------PRESIONE UNA TECLA PARA CONTINUAR----------->(todo menos 1)");
             Console.ReadKey();
-            Console.Clear();
+            //Console.Clear();
 
             // Muestro solo Dulces
             Console.WriteLine(Changuito.Mostrar(changoDeCompras, Changuito.ETipo.Dulce));
-            Console.WriteLine("<-----------PRESIONE UNA TECLA PARA CONTINUAR----------->");
+            Console.WriteLine("<-----------PRESIONE UNA TECLA PARA CONTINUAR----------->(todos dulces)");
             Console.ReadKey();
-            Console.Clear();
+            //Console.Clear();
 
             // Muestro solo Leches
             Console.WriteLine(Changuito.Mostrar(changoDeCompras, Changuito.ETipo.Leche));
-            Console.WriteLine("<-----------PRESIONE UNA TECLA PARA CONTINUAR----------->");
+            Console.WriteLine("<-----------PRESIONE UNA TECLA PARA CONTINUAR----------->(todos leche)");
             Console.ReadKey();
-            Console.Clear();
+            //Console.Clear();
 
             // Muestro solo Snacks
             Console.WriteLine(Changuito.Mostrar(changoDeCompras, Changuito.ETipo.Snacks));
-            Console.WriteLine("<-------------PRESIONE UNA TECLA PARA SALIR------------->");
+            Console.WriteLine("<-------------PRESIONE UNA TECLA PARA SALIR------------->(todos snack)");
             Console.ReadKey();
         }
+        
     }
 }

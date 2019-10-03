@@ -9,7 +9,7 @@ namespace Entidades_2018
     public class Snacks : Producto
     {
         public Snacks(EMarca marca, string patente, ConsoleColor color)
-            
+            : base(marca, patente, color)
         {
         }
         /// <summary>
@@ -28,8 +28,9 @@ namespace Entidades_2018
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine("SNACKS");
-            sb.AppendLine(Convert.ToString(this));
-            sb.AppendLine("CALORIAS : "+ this.CantidadCalorias);
+            sb.AppendLine("CODIGO DE BARRAS: ");
+            sb.AppendLine("MARCA: ");
+            sb.AppendLine("CALORIAS : "+ CantidadCalorias);
             sb.AppendLine("");
             sb.AppendLine("---------------------");
 

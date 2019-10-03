@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using System.Drawing;
 
 namespace Entidades_2018
 {
@@ -20,7 +19,7 @@ namespace Entidades_2018
         /// <param name="patente"></param>
         /// <param name="color"></param>
         public Leche(EMarca marca, string patente, ConsoleColor color)
-            
+            : base(marca, patente, color)
         {
             tipo = ETipo.Entera;
         }
@@ -32,7 +31,7 @@ namespace Entidades_2018
         {
             get
             {
-                return this.CantidadCalorias;
+                return 20;
             }
         }
 
@@ -41,9 +40,10 @@ namespace Entidades_2018
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine("LECHE");
-            sb.AppendLine(Convert.ToString(this));
-            sb.AppendLine("CALORIAS : "+ this.CantidadCalorias);
-            sb.AppendLine("TIPO : " + this.tipo);
+            sb.AppendLine("CODIGO DE BARRAS: ");
+            sb.AppendLine("MARCA: ");
+            sb.AppendLine("CALORIAS : "+ CantidadCalorias);
+            sb.AppendLine("TIPO : " +tipo);
             sb.AppendLine("");
             sb.AppendLine("---------------------");
 

@@ -10,6 +10,7 @@ namespace Entidades_2018
     public class Dulce : Producto
     {
         public Dulce(EMarca marca, string patente, ConsoleColor color)
+            : base(marca, patente, color)
         {
         }
 
@@ -24,15 +25,17 @@ namespace Entidades_2018
             }
         }
 
-        public override sealed string Mostrar()
+        public override string Mostrar()
         {
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine("DULCE");
-            sb.AppendLine(this.Mostrar());
-            sb.AppendLine("CALORIAS : "+ this.CantidadCalorias);
+            sb.AppendLine("CODIGO DE BARRAS: " );
+            sb.AppendLine("MARCA: "   );
+            sb.AppendLine("CALORIAS : "+ CantidadCalorias);
             sb.AppendLine("");
             sb.AppendLine("---------------------");
+            
 
             return Convert.ToString(sb);
         }

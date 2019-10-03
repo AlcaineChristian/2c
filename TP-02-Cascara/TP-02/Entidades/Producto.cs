@@ -19,6 +19,14 @@ namespace Entidades_2018
         string codigoDeBarras;
         ConsoleColor colorPrimarioEmpaque;
 
+        public Producto(EMarca marca,string codigoDeBarras,ConsoleColor colorPrimarioEmpaque)
+        {
+            this.codigoDeBarras = codigoDeBarras;
+            this.marca = marca;
+            this.colorPrimarioEmpaque = colorPrimarioEmpaque;
+
+        }
+
         /// <summary>
         /// ReadOnly: Retornará la cantidad de ruedas del vehículo
         /// </summary>
@@ -29,9 +37,8 @@ namespace Entidades_2018
         /// </summary>
         /// <returns></returns>
         public abstract string Mostrar();
-        /*{
-            return this;
-        */
+        
+
 
         public static explicit operator string(Producto p)
         {

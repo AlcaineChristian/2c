@@ -19,13 +19,15 @@ namespace Entidades_2018
         }
 
         #region "Constructores"
-        private Changuito()
+        private  Changuito()
         {
             this.productos = new List<Producto>();
         }
         public Changuito(int espacioDisponible)
         {
+            this.productos = new List<Producto>();
             this.espacioDisponible = espacioDisponible;
+            
         }
         #endregion
 
@@ -87,7 +89,8 @@ namespace Entidades_2018
         /// <returns></returns>
         public static Changuito operator +(Changuito c, Producto p)
         {
-            foreach (Producto v in (IEnumerable<Changuito>)c)
+            
+            foreach (Producto v in c.productos)
             {
                 if (v == p)
                     return c;
@@ -104,7 +107,7 @@ namespace Entidades_2018
         /// <returns></returns>
         public static Changuito operator -(Changuito c, Producto p)
         {
-            foreach (Producto v in (IEnumerable<Changuito>)c)
+            foreach (Producto v in c.productos)//(IEnumerable<Producto>)c
             {
                 if (v == p)
                 {
@@ -115,5 +118,6 @@ namespace Entidades_2018
             return c;
         }
         #endregion
+        
     }
 }
