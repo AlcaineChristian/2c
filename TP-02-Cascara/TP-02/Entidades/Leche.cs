@@ -23,6 +23,11 @@ namespace Entidades_2018
         {
             tipo = ETipo.Entera;
         }
+        public Leche(EMarca marca, string patente, ConsoleColor color,ETipo tipo)
+            : base(marca, patente, color)
+        {
+            this.tipo = tipo;
+        }
 
         /// <summary>
         /// Las leches tienen 20 calorías
@@ -40,8 +45,10 @@ namespace Entidades_2018
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine("LECHE");
-            sb.AppendLine("CODIGO DE BARRAS: ");
-            sb.AppendLine("MARCA: ");
+            sb.AppendLine("CODIGO DE BARRAS: " + codigoDeBarras);
+            sb.AppendLine("MARCA           : " + marca);
+            sb.AppendLine("COLOR EMPAQUE   : " + colorPrimarioEmpaque);
+            sb.AppendLine("---------------------");
             sb.AppendLine("CALORIAS : "+ CantidadCalorias);
             sb.AppendLine("TIPO : " +tipo);
             sb.AppendLine("");

@@ -62,13 +62,23 @@ namespace Entidades_2018
                 switch (tipo)
                 {
                     case ETipo.Snacks:
-                        sb.AppendLine(v.Mostrar());
+                        if()
+                        {
+                            sb.AppendLine(v.Mostrar());
+                        }
+                        
                         break;
                     case ETipo.Dulce:
-                        sb.AppendLine(v.Mostrar());
+                        if ()
+                        {
+                            sb.AppendLine(v.Mostrar());
+                        }
                         break;
                     case ETipo.Leche:
-                        sb.AppendLine(v.Mostrar());
+                        if ()
+                        {
+                            sb.AppendLine(v.Mostrar());
+                        }
                         break;
                     default:
                         sb.AppendLine(v.Mostrar());
@@ -95,8 +105,11 @@ namespace Entidades_2018
                 if (v == p)
                     return c;
             }
-
-            c.productos.Add(p);
+            if(c.productos.Count<c.espacioDisponible)
+            {
+                c.productos.Add(p);
+            }
+            //c.productos.Add(p);
             return c;
         }
         /// <summary>
@@ -107,14 +120,14 @@ namespace Entidades_2018
         /// <returns></returns>
         public static Changuito operator -(Changuito c, Producto p)
         {
-            foreach (Producto v in c.productos)//(IEnumerable<Producto>)c
+            foreach (Producto v in c.productos)
             {
                 if (v == p)
                 {
                     break;
                 }
             }
-
+            c.productos.Remove(p);
             return c;
         }
         #endregion

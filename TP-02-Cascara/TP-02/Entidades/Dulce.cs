@@ -30,12 +30,14 @@ namespace Entidades_2018
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine("DULCE");
-            sb.AppendLine("CODIGO DE BARRAS: " );
-            sb.AppendLine("MARCA: "   );
-            sb.AppendLine("CALORIAS : "+ CantidadCalorias);
+            sb.AppendLine("CODIGO DE BARRAS: " +codigoDeBarras );
+            sb.AppendLine("MARCA           : "+  marca);
+            sb.AppendLine("COLOR EMPAQUE   : " + colorPrimarioEmpaque);
+            sb.AppendLine("---------------------");
+            sb.AppendLine("CALORIAS : " + CantidadCalorias);
             sb.AppendLine("");
             sb.AppendLine("---------------------");
-            
+
 
             return Convert.ToString(sb);
         }

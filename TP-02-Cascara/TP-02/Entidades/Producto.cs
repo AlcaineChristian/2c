@@ -15,13 +15,16 @@ namespace Entidades_2018
         {
             Serenisima, Campagnola, Arcor, Ilolay, Sancor, Pepsico
         }
-        EMarca marca;
-        string codigoDeBarras;
-        ConsoleColor colorPrimarioEmpaque;
+        protected EMarca marca;
+        
+        protected string codigoDeBarras;
+        
+        protected ConsoleColor colorPrimarioEmpaque;
+        
 
-        public Producto(EMarca marca,string codigoDeBarras,ConsoleColor colorPrimarioEmpaque)
+        public Producto(EMarca marca,string patente,ConsoleColor colorPrimarioEmpaque)
         {
-            this.codigoDeBarras = codigoDeBarras;
+            this.codigoDeBarras = patente;
             this.marca = marca;
             this.colorPrimarioEmpaque = colorPrimarioEmpaque;
 
@@ -45,9 +48,9 @@ namespace Entidades_2018
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine("CODIGO DE BARRAS: "+ p.codigoDeBarras);
-            sb.AppendLine("\r\nMARCA          :" + p.marca.ToString());
-            sb.AppendLine("\r\nCOLOR EMPAQUE  : " + p.colorPrimarioEmpaque.ToString());
-            sb.AppendLine("\r\n---------------------");
+            sb.AppendLine("\nMARCA          :" + p.marca.ToString());
+            sb.AppendLine("\nCOLOR EMPAQUE  : " + p.colorPrimarioEmpaque.ToString());
+            sb.AppendLine("\n---------------------");
 
             return Convert.ToString(sb);
         }
