@@ -10,7 +10,7 @@ namespace Entidades
     {
         List<Botella> botellas;
         int espaciosTotales;
-        Cantina singleton;
+        static Cantina singleton;
 
         public Botella Botellas
         {
@@ -23,15 +23,15 @@ namespace Entidades
             this.espaciosTotales = espacios;
         }
 
-       public Cantina GetEspacios(int espacios)
+       public static Cantina GetEspacios(int espacios)
         {
-            if (this.singleton == null)
+            if (singleton is null)
             {
-                this.singleton = new Cantina(0);
+                singleton = new Cantina(10);
             }
-            else if (this.singleton != null)
+            else 
             {
-                this.espaciosTotales = espacios;
+               singleton.espaciosTotales = espacios;
             }
 
 
