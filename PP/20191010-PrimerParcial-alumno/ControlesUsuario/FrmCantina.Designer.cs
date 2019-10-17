@@ -52,7 +52,6 @@
             this.Barra.Name = "Barra";
             this.Barra.Size = new System.Drawing.Size(551, 368);
             this.Barra.TabIndex = 0;
-            this.Barra.Load += new System.EventHandler(this.barra1_Load);
             // 
             // lblMarca
             // 
@@ -62,7 +61,6 @@
             this.lblMarca.Size = new System.Drawing.Size(37, 13);
             this.lblMarca.TabIndex = 3;
             this.lblMarca.Text = "Marca";
-            this.lblMarca.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblBotellaTipo
             // 
@@ -90,7 +88,7 @@
             this.cmbBotellaTipo.Name = "cmbBotellaTipo";
             this.cmbBotellaTipo.Size = new System.Drawing.Size(121, 21);
             this.cmbBotellaTipo.TabIndex = 6;
-            this.cmbBotellaTipo.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cmbBotellaTipo.SelectedIndexChanged += new System.EventHandler(this.cmbBotellaTipo_SelectedIndexChanged);
             // 
             // lblCapacidad
             // 
@@ -100,7 +98,6 @@
             this.lblCapacidad.Size = new System.Drawing.Size(58, 13);
             this.lblCapacidad.TabIndex = 7;
             this.lblCapacidad.Text = "Capacidad";
-            this.lblCapacidad.Click += new System.EventHandler(this.label3_Click);
             // 
             // lblContenido
             // 
@@ -142,7 +139,6 @@
             this.rbAgua.TabStop = true;
             this.rbAgua.Text = "Agua";
             this.rbAgua.UseVisualStyleBackColor = true;
-            this.rbAgua.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // numCapacidad
             // 

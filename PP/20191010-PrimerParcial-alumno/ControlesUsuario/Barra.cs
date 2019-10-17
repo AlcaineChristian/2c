@@ -24,7 +24,8 @@ namespace ControlCantina
             offset = 10;
         }
 
-        public Cantina SetCantina {
+        public Cantina SetCantina
+        {
             set
             {
                 this.cantina = value;
@@ -33,6 +34,7 @@ namespace ControlCantina
                 this.cantina.Botellas.Add(new Cerveza(2000, "", Botella.Tipo.Plastico, 2000));*/
                 this.DibujarBotellas();
             }
+
         }
 
         public void AgregarBotella(Botella b)
@@ -45,7 +47,7 @@ namespace ControlCantina
 
         public void DibujarBotellas()
         {
-            foreach (Botella item in this.cantina.Botellas)
+            foreach (Botella item in (IEnumerable<Botella>)this.cantina.Botellas)
             {
                 this.BotellaEnBarra(item);
             }
@@ -54,7 +56,7 @@ namespace ControlCantina
         private void BotellaEnBarra(Botella item)
         {
             string src;
-
+            
             PictureBox pb = new PictureBox();
             if (item is Agua)
             {
@@ -62,6 +64,7 @@ namespace ControlCantina
             }
             else
             {
+                
                 Botella.Tipo tipo = ((Cerveza)item);
                 switch (tipo)
                 {
@@ -93,21 +96,22 @@ namespace ControlCantina
             pb.Location = new System.Drawing.Point(125, 125);
 
             int cantidadServida = botella.ServirMedida();
-            if(botella.ServirMedida()==0)
+            if (botella.ServirMedida() == 0)
             {
                 MessageBox.Show(string.Format("NO QUEDA MAS LIQUIDO!"));
-            }else
+            }
+            else
             {
                 MessageBox.Show(string.Format("SIRVIENDO! {1}ml\n{0}", botella.ToString(), cantidadServida), "Cantinero", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-            
+
 
             pb.Location = ubicacion;
         }
 
-    private void Barra_Load(object sender, EventArgs e)
-    {
+        private void Barra_Load(object sender, EventArgs e)
+        {
 
+        }
     }
-  }
 }

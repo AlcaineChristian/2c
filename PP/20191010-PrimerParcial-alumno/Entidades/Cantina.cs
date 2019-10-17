@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-  public class Cantina
-  {
+    public class Cantina
+    {
         List<Botella> botellas;
         int espaciosTotales;
         Cantina singleton;
@@ -15,32 +15,33 @@ namespace Entidades
         public Botella Botellas
         {
             get;
-            
+            set;
         }
-        
+
         private Cantina(int espacios)
         {
             this.espaciosTotales = espacios;
         }
 
-        public Cantina GetEspacios(int espacios)
+       public Cantina GetEspacios(int espacios)
         {
-            if(this.singleton==null)
+            if (this.singleton == null)
             {
-                Cantina singleton = new Cantina(0);
-            }else if(this.singleton!=null)
+                this.singleton = new Cantina(0);
+            }
+            else if (this.singleton != null)
             {
                 this.espaciosTotales = espacios;
             }
 
 
 
-            return this.singleton;
+            return singleton;
         }
         public static bool operator +(Cantina a, Botella b)
         {
             bool ret = false;
-            if(a.botellas.Count < a.espaciosTotales)
+            if (a.botellas.Count < a.espaciosTotales)
             {
                 a.botellas.Add(b);
                 ret = true;
@@ -51,7 +52,7 @@ namespace Entidades
 
             return ret;
         }
-        
+
 
     }
 }
