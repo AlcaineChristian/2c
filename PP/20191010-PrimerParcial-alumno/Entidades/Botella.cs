@@ -69,9 +69,11 @@ namespace Entidades
             return GenerarInforme();
         }
 
-        /*public static implicit operator Tipo(Botella v)
+        
+
+        public static implicit operator Tipo(Botella v)
         {
             throw new NotImplementedException();
-        }*/
+        }
     }
 }

@@ -47,7 +47,7 @@ namespace ControlCantina
 
         public void DibujarBotellas()
         {
-            foreach (Botella item in (IEnumerable<Botella>)this.cantina.Botellas)
+            foreach (Botella item in cantina.Botellas)
             {
                 this.BotellaEnBarra(item);
             }
@@ -109,9 +109,6 @@ namespace ControlCantina
             pb.Location = ubicacion;
         }
 
-        private void Barra_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

@@ -16,6 +16,7 @@ namespace Entidades
         {
             get;
             set;
+
         }
 
         private Cantina(int espacios)
@@ -23,15 +24,15 @@ namespace Entidades
             this.espaciosTotales = espacios;
         }
 
-       public static Cantina GetEspacios(int espacios)
+        public static Cantina GetEspacios(int espacios)
         {
             if (singleton is null)
             {
                 singleton = new Cantina(10);
             }
-            else 
+            else
             {
-               singleton.espaciosTotales = espacios;
+                singleton.espaciosTotales = espacios;
             }
 
 
