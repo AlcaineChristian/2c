@@ -24,17 +24,20 @@ namespace Entidades
 
         public override int ServirMedida()
         {
-            if (MEDIDA >= this.Contenido)
-            {
-                this.Contenido = 0;
-            }
-            else if (MEDIDA < this.Contenido)
-            {
-                this.Contenido = this.Contenido - ((MEDIDA * 80) / 100);
+            int medida2;
 
+            if (Cerveza.MEDIDA <= this.Contenido)
+            {
+                medida2 = (Cerveza.MEDIDA * 80) / 100;
+            }
+            else
+            {
+                medida2 = this.Contenido;
             }
 
-            return this.Contenido;
+            this.Contenido -= medida2;
+
+            return medida2;
         }
         public override string GenerarInforme()
         {
@@ -46,7 +49,10 @@ namespace Entidades
 
             return Convert.ToString(sb);
         }
+        public static implicit operator Botella.Tipo(Cerveza cerveza)
+        {
+            return cerveza.tipo;
+        }
 
-        
     }
 }

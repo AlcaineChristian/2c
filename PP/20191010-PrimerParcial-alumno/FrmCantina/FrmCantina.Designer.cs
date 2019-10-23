@@ -132,9 +132,6 @@
             // cmbBotellaTipo
             // 
             this.cmbBotellaTipo.FormattingEnabled = true;
-            this.cmbBotellaTipo.Items.AddRange(new object[] {
-            "Vidrio",
-            "Plastico"});
             this.cmbBotellaTipo.Location = new System.Drawing.Point(411, 443);
             this.cmbBotellaTipo.Name = "cmbBotellaTipo";
             this.cmbBotellaTipo.Size = new System.Drawing.Size(121, 21);
@@ -168,7 +165,7 @@
             // barra1
             // 
             this.barra1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("barra1.BackgroundImage")));
-            this.barra1.Location = new System.Drawing.Point(21, 12);
+            this.barra1.Location = new System.Drawing.Point(21, 23);
             this.barra1.Name = "barra1";
             this.barra1.Size = new System.Drawing.Size(551, 368);
             this.barra1.TabIndex = 25;
@@ -202,7 +199,7 @@
 
         #endregion
 
-        private ControlCantina.Barra Barra;
+        
         private System.Windows.Forms.NumericUpDown numContenido;
         private System.Windows.Forms.NumericUpDown numCapacidad;
         private System.Windows.Forms.RadioButton rbAgua;

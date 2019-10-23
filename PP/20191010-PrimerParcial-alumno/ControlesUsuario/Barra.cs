@@ -47,7 +47,7 @@ namespace ControlCantina
 
         public void DibujarBotellas()
         {
-            foreach (Botella item in cantina.Botellas)
+            foreach (Botella item in this.cantina.Botellas)
             {
                 this.BotellaEnBarra(item);
             }
@@ -95,15 +95,15 @@ namespace ControlCantina
             Point ubicacion = pb.Location;
             pb.Location = new System.Drawing.Point(125, 125);
 
+            
             int cantidadServida = botella.ServirMedida();
-            if (botella.ServirMedida() == 0)
+            string mensaje = "SIRVIENDO!";
+
+            if (cantidadServida == 0)
             {
-                MessageBox.Show(string.Format("NO QUEDA MAS LIQUIDO!"));
+                mensaje = "No queda mas liquido!";
             }
-            else
-            {
-                MessageBox.Show(string.Format("SIRVIENDO! {1}ml\n{0}", botella.ToString(), cantidadServida), "Cantinero", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
+            MessageBox.Show(string.Format("{2} {1}ml\n{0}", botella.ToString(), cantidadServida, mensaje), "Cantinero", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
 
             pb.Location = ubicacion;

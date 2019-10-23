@@ -9,9 +9,9 @@ namespace Entidades
 {
     public abstract class Botella
     {
-        int capacidadML;
-        int contenidoML;
-        string marca;
+        protected int capacidadML;
+        protected int contenidoML;
+        protected string marca;
 
         public Botella(int capacidad, int contenido, string marca)
         {
@@ -71,9 +71,6 @@ namespace Entidades
 
         
 
-        public static implicit operator Tipo(Botella v)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

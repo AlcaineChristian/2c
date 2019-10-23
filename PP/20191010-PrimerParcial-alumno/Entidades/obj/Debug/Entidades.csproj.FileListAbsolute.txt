@@ -3,3 +3,4 @@ D:\Alcaine\PP\20191010-PrimerParcial-alumno\Entidades\bin\Debug\Entidades.pdb
 D:\Alcaine\PP\20191010-PrimerParcial-alumno\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 D:\Alcaine\PP\20191010-PrimerParcial-alumno\Entidades\obj\Debug\Entidades.dll
 D:\Alcaine\PP\20191010-PrimerParcial-alumno\Entidades\obj\Debug\Entidades.pdb
+D:\Alcaine\PP\20191010-PrimerParcial-alumno\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
